@@ -5,8 +5,12 @@ import { Dish } from '../shared/dish';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
+const DISHES: Dish[] = [
+  
+  
+  ];
 export class MenuComponent implements OnInit {
-  dishes: Dish[] = [
+  /*dishes: Dish[] = [
     {
       id: '0',
       name: 'Uthappizza',
@@ -48,7 +52,14 @@ export class MenuComponent implements OnInit {
       price: '2.99',
       description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
     }
-   ];
+  ];
+    */
+
+    dishes = DISHES;
+
+    selectedDish = DISHES[0];
+
+   
 
 
   constructor() { }
